@@ -1,3 +1,4 @@
+import { OrderComponent } from './order/order.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { Routes } from "@angular/router";
@@ -11,6 +12,7 @@ export const ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'restaurants', component: RestaurantsComponent },
+    { path: 'order', component: OrderComponent },
     {
         path: 'restaurants/:id', component: RestaurantDetailComponent,
         children: [
