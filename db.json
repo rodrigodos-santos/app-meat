@@ -370,5 +370,51 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "address": "Rua Lago",
+      "number": "400",
+      "optionalAddress": "",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "burger"
+        },
+        {
+          "quantity": 1,
+          "menuId": "fries"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "address": "Rua Lago",
+      "number": "150",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "capp"
+        }
+      ],
+      "id": 7
+    }
+  ]
 }
