@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  menu: Observable<MenuItem>
+  menu: Observable<MenuItem[]>
 
   constructor(
     private restaurantsService: RestaurantsService,
