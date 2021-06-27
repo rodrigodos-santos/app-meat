@@ -21,6 +21,7 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { LoginComponent } from './security/login/login.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MenuItemComponent,
     ReviewsComponent,
     OrderSumaryComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy }, 
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
     { provide: LOCALE_ID, useValue: 'pt-BR' }
   ],
   bootstrap: [AppComponent]
