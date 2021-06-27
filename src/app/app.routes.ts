@@ -7,11 +7,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './security/login/login.component';
 
 export const ROUTES: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'login', component: LoginComponent },
     { path: 'about', loadChildren: './about/about.module#AboutModule' },
     { path: 'restaurants', component: RestaurantsComponent },
     { path: 'order', loadChildren: './order/order.module#OrderModule' },
