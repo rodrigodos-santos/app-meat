@@ -3,6 +3,7 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { PreloadAllModules, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -20,7 +21,8 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { LoginComponent } from './security/login/login.component';
+
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MenuItemComponent,
     ReviewsComponent,
     OrderSumaryComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
