@@ -8,8 +8,6 @@ import 'rxjs/add/operator/catch'
 
 import { Restaurant } from './restaurant/restaurant.model';
 import { MEAT_API } from './../app.api';
-import { ErrorHandler } from 'app/app.error-handler';
-
 
 @Injectable()
 
